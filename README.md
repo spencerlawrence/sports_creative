@@ -22,3 +22,19 @@ Your project is within the scope of the project
 How well followed the above instructions were
 a TA evaluation of your project
 a small number of in-class peer evaluations (evaluations outside the in-class period will be discarded unless you talk to the TA)
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+SUBMISSION DESCRIPTION:
+
+With the MLB playoffs coming up, my webpage allows you pick who you think will win the world series. Upon making your choice, you will see the teams win-loss record and a link to a recent ESPN article about the team.
+
+After your selection, you can choose another team to see their record/news.
+
+----
+
+In this project, I utilized a CSS button generator I found on google to add extra style to my buttons. I also used three different Google fonts to expand my options for font-families. The part that took me the most work was copying the nine .png files into my ubuntu directory. It was difficult because I was getting a permission error. Once I figured out the error and put all nine files in a directory called "imgs," I was able to copy it over easily. The other hard part was finding eight relevant news articles for the links that appear when you click on a team.
+
+-----
+
+website: http://ec2-18-220-90-153.us-east-2.compute.amazonaws.com/sports/ (Links to an external site.)Links to an external site.
