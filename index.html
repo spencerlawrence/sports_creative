@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Lato|Oswald|Permanent+Marker" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="main.css">
+
+<style>
+	h1 {
+		font-family: 'Permanent Marker', cursive;
+	}
+</style>
+
+</head>
+<body>
+	<h1>Which Team Will Win the World Series?</h1>
+	<h2>Click a team to see their current win-loss record and recent news<h2>
+	<div id="teams">
+		<br>
+		<button id="Dodgers" type="button"  onclick="pickTeam(this.id)">Los Angeles Dodgers</button>
+		<button id="Indians" type="button" onclick="pickTeam(this.id)">Cleveland Indians</button>
+		<button id="Astros" type="button"  onclick="pickTeam(this.id)">Houston Astros</button>
+		<button id="Nationals" type="button" onclick="pickTeam(this.id)">Washington Nationals</button>
+		<button id="RedSox" type="button" onclick="pickTeam(this.id)">Boston Red Sox</button>
+		<button id="Diamondbacks" type="button"  onclick="pickTeam(this.id)">Arizona Diamondbacks</button>
+		<button id="Yankees" type="button" onclick="pickTeam(this.id)">New York Yankees</button>
+		<button id="Cubs" type="button" onclick="pickTeam(this.id)">Chicago Cubs</button>
+	</div>
+	
+	<div id="pick" style="text-align: center">
+		<br>
+		<br>
+		<img src="./imgs/mlb.png" id="logo" height="142" width="142">
+		<p id ="info"></p>
+		<a href="" id="link"></a>
+	</div>
+
+	<script>
+		var pickTeam = function(clicked_id) {
+			switch(clicked_id) {
+				case "Dodgers":
+					document.getElementById("logo").src="./imgs/dodgers.png"
+					document.body.style.backgroundColor = "#3498DB";
+					document.getElementById("info").textContent = "The Dodgers are currently 97-56";
+					document.getElementById("link").textContent = "NEWS: Inside the clubhouse for the Dodgers' rise and fall"
+					document.getElementById("link").href = "http://www.espn.com/espn/feature/story/_/id/20765887/inside-los-angeles-dodgers-clubhouse-where-two-streaks-define-season"
+					break;
+
+				case "Indians":
+					document.getElementById("logo").src="./imgs/indians.png"
+					document.body.style.backgroundColor =  "#F2D7D5";
+					document.getElementById("info").textContent = "The Indians are currently 96-57";
+					document.getElementById("link").textContent = "Amazingly, the Indians are even better than they seem"
+					document.getElementById("link").href = "https://fivethirtyeight.com/features/amazingly-the-indians-are-even-better-than-they-seem/"
+					break;
+
+				case "Astros":
+					document.getElementById("logo").src="./imgs/astros.png"
+					document.body.style.backgroundColor = "#EDBB99";
+					document.getElementById("info").textContent = "The Astros are currently 93-58";
+					document.getElementById("link").textContent = "Power Rankings: Astros slip a spot"
+					document.getElementById("link").href = "http://www.espn.com/mlb/story/_/page/powerrankings_2017week24/ranking-mlb-teams-week-24-season"
+					break;
+
+				case "Nationals":
+					document.getElementById("logo").src="./imgs/nationals.png"
+					document.body.style.backgroundColor = "#F1948A";
+					document.getElementById("info").textContent = "The Nationals are currently 92-59";
+					document.getElementById("link").textContent = "Nationals' playoff lineup questions lie in outfield"
+					document.getElementById("link").href = "http://www.espn.com/blog/sweetspot/post/_/id/82828"
+					break;
+
+				case "RedSox":
+					document.getElementById("logo").src="./imgs/redsox.png"
+					document.body.style.backgroundColor = "#E74C3C";
+					document.getElementById("info").textContent = "The RedSox are currently 88-64";
+					document.getElementById("link").textContent = "Far from the field, Red Sox clinch postseason berth";
+					document.getElementById("link").href = "http://www.espn.com/blog/boston/red-sox/post/_/id/53479/far-from-the-field-red-sox-clinch-postseason-berth";
+					break;
+
+				case "Diamondbacks":
+					document.getElementById("logo").src="./imgs/diamondbacks.png"
+					document.body.style.backgroundColor = "#E74C3C" ;
+					document.getElementById("info").textContent = "The Diamondbacks are currently 88-65";
+					document.getElementById("link").textContent = "Can Iannetta continue hitting in the 2-hole?"
+					document.getElementById("link").href = "http://www.espn.com/blog/sweetspot/post/_/id/82828"
+					break;
+
+				case "Yankees":
+					document.getElementById("logo").src="./imgs/yankees.png"
+					document.body.style.backgroundColor = "#85929E";
+					document.getElementById("info").textContent = "The Yankees are currently 85-67";
+					document.getElementById("link").textContent = "Mr. May or Mr. October? Joe Torre sees playoff stuff in Aaron Judge"
+					document.getElementById("link").href = "http://www.espn.com/blog/new-york/yankees/post/_/id/97199/mr-may-or-mr-october-joe-torre-sees-playoff-stuff-in-aaron-judge"
+					break;
+
+				case "Cubs":
+					document.getElementById("logo").src="./imgs/cubs.png"
+					document.body.style.backgroundColor = "#AED6F1";
+					document.getElementById("info").textContent = "The Cubs are currently 84-67";
+					document.getElementById("link").textContent = "Cubs need Jon Lester to find a fix by October"
+					document.getElementById("link").href = "http://www.espn.com/blog/chicago/cubs/post/_/id/45780/cubs-need-jon-lester-to-find-a-fix-by-october"
+					break;
+			}
+		}
+	</script>
+
+</body>
+</html>
